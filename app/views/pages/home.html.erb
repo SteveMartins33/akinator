@@ -1,12 +1,17 @@
-<h1>Akinator</h1>
-<p>Challenge me to see if I can find who you think!</p>
+<header>
+<div class="bloc-titre">
+<h1>AKINATOR</h1>
+<p>Tu ne peux pas me vaincre</p>
 
-<%= Time.now.strftime("%d/%m/%y") %>
-
-<%= link_to( "Mon blog", pages_blog_path, method: :get) %>
-
-<p>Pense à quelqu'un</p>
+<div class="time">
+<p>Nous sommes le :</p>
+<%= Time.now.strftime("%d/%m/%y")%>
+</div>
+<!-- <%= link_to( "Mon blog", pages_blog_path, method: :get) %> -->
+<br>
+<p>Pense à quelqu'un!</p>
 
 <%= link_to( "Commencer à jouer!", games_path, method: :post, class: "btn btn-warning") %> 
-
+</div>
+</header>
 

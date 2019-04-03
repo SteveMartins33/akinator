@@ -1,6 +1,12 @@
-<h1>Games#edit</h1>
-<p>Find me in app/views/games/edit.html.erb</p>
+<header>
+<div class= "bloc-titre">
+<h1>Question 1</h1>
+<p>Réponds honnêtement</p>
 
-  	<%= link_to("Oui!", game_path(1), method: :patch, class: "btn btn-warning") %>
-  	<%= link_to("Non!", game_path(1), method: :patch, class: "btn btn-warning") %>
+<%= @question %>
 
+  	<%= link_to("Oui!", game_path(params["id"], answer: "yes"), method: :patch, class: "btn btn-warning") %>
+  	<%= link_to("Non!", game_path(params["id"], answer: "no"), method: :patch, class: "btn btn-warning") %>
+
+</div>
+</header>
